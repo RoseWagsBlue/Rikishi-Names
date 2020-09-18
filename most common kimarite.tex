@@ -1,0 +1,59 @@
+%    list of most common sumo kimarite
+
+\documentclass[letterpaper]{article}
+\usepackage[letterpaper, margin=0.9in]{geometry}
+\usepackage{xeCJK}
+\usepackage{xcolor}
+%\usepackage{fontspec}
+\usepackage{anyfontsize}
+\usepackage{hyperref}
+%\usepackage{array}
+%\usepackage{longtable}
+\usepackage{multicol}
+
+
+
+\hypersetup {
+ pdfauthor= Rose DiFonzo,
+ pdftitle={Most Common Sumo Kimarite},
+ pdfsubject={sumo, 大相撲 },
+ pdfkeywords={kanji, japan, wanikani, sumo, 大相撲},
+ }
+ 
+
+ \setCJKmainfont{KanjiStrokeOrders}
+ \setCJKsansfont{Meiryo}
+  \newcounter{mycounter}
+  \setcounter{mycounter}{0}
+  
+ \newcommand{\sumoblock}[3]
+{
+\stepcounter{mycounter}
+\arabic{mycounter}\\
+\CJKfamily{Script=CJK}
+\fontsize{40}{40}
+#1
+\fontsize{10}{10}
+\noindent
+#2#3
+
+}
+
+\begin{document}
+%\begin{multicols}{2}
+%\RLmulticolcolumns
+\sumoblock{寄り切り}{よりきり}{Maintaining a grip on the opponent's 回し, the opponent is forced backwards out of the ring (frontal force out).}
+\sumoblock{押し出し}{おしだし}{Pushing the opponent out of the 土俵  without holding their 回し, nor fully extending his arms. Hand contact must be maintained through the push (front push out). }
+\sumoblock{叩き込み}{はたきこみ}{Slapping down the opponent's shoulder, back, or arm and forcing them to fall forwards touching the clay (slap down)}
+\sumoblock{上手投げ}{うわてなげ}{The attacker extends their arm over the opponent's arm to grab the opponent's 回し and throws the opponent to the ground while turning sideways (overarm throw). }
+\sumoblock{寄り倒し}{よりたおし}{Maintaining a grip on the opponent's 回し, the opponent is forced backwards out of the ring and collapses on their back from the force of the attack (front crush out). }
+\sumoblock{つき後氏}{つきおとし}{Thrusting the opponent down out of the 土俵  (the opponent falls over the edge) onto their back with a hard thrust or shove (front thrust down). }
+\sumoblock{送り出し}{おくりだし}{To push an off-balance opponent out of the 土俵  from behind (rear push out). }
+\sumoblock{引き落とし}{ひきおとし}{Pulling on the opponent's shoulder, arm, or 回し and forcing them to fall forwards touching the clay (hand pull down). }
+\sumoblock{押し倒し}{おしたおし}{Pushing the opponent down out of the 土俵  (the opponent falls out of the ring instead of backing out) without holding their 回し. Hand contact is maintained throughout the push (front push down). }
+\sumoblock{掬い投げ}{すくいなげ}{The attacker extends their arm under the opponent's armpit and across their back while turning sideways, forcing the opponent forward and throwing him to the ground without touching the 回し (beltless arm throw). }
+\sumoblock{小手投げ}{こてなげ}{The attacker wraps their arm around the opponent's extended arm (差し手 - gripping arm), then throws the opponent to the ground without touching their 回し　(armlock throw). }
+
+
+%\end{multicols}
+\end{document} 
